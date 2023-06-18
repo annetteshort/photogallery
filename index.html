@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
     <head>
         <title>Photo Gallery</title>
 		<meta charset="UTF-8">
@@ -21,7 +21,7 @@
         </header>
 
         <main>
-            <!--Section for about -->
+            <!--Section for about -->` 
             <section id="about">
                 <h2>About</h2>
                 <p>Hello!</p>
@@ -29,70 +29,73 @@
                     photography is my speciality and it’s taken me all over the world.</p>
             </section>
 
-            <!--Section for photos-->
+            <!--Section for entire gallery-->
             <section id="gallery">
+                <h2>Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption. </p>
-
-                <!--Chile-->
-                <figure>
-                    <img src="images/Chile.png" alt="beach at sunset with large rocky hill to the right">
-                    <figcaption>Chile, 2001</figcaption>
-                </figure>
-                <!--Guatemala-->
-                <figure>
-                    <img src="images/Guatemala.png" alt="beach at sunset with purple plants surrounding">
-                    <figcaption>Guatemala, 1997</figcaption>
-                </figure>
-                <!--Hawaii-->
-                <figure>
-                    <img src="images/Hawaii.png" alt="mountainous terrain with beach in view">
-                    <figcaption>Hawaii, 2010</figcaption>
-                </figure>
-                <!--Iran-->
-                <figure>
-                    <img src="images/Iran.png" alt="sandy desert with red, bushy plants">
-                    <figcaption>Iran, 1999</figcaption>
-                </figure>
-                <!--Ireland-->
-                <figure>
-                    <img src="images/Ireland.png" alt="bright green valley with small lake to the right">
-                    <figcaption>Ireland, 2012</figcaption>
-                </figure>
-                <!--Italy-->
-                <figure>
-                    <img src="images/Italy.png" alt="lake along a big mountain side">
-                    <figcaption>Italy, 2015</figcaption>
-                </figure>
-                <!--Moab Desert-->
-                <figure>
-                    <img src="images/Moab-Desert.png" alt="sunset through a rocky cliff">
-                    <figcaption>Moab Desert, 2020</figcaption>
-                </figure>
-                <!--Rocky Mountains-->
-                <figure>
-                    <img src="images/Rocky-Mountains.png" alt="large rocky masses along wave front">
-                    <figcaption>Rocky Mountains, 2009</figcaption>
-                </figure>
-                <!--Switzerland-->
-                <figure>
-                    <img src="images/Switzerland.png" alt="icy valley through the mountains">
-                    <figcaption>Switzerland, 2014</figcaption>
-                </figure>
-                <!--UK-->
-                <figure>
-                    <img src="images/UK.png" alt="green valley in mountains">
-                    <figcaption>UK, 2005</figcaption>
-                </figure>
-                <!--USA-->
-                <figure>
-                    <img src="images/USA.png" alt="field full of bright flowers">
-                    <figcaption>USA, 2021</figcaption>
-                </figure>
-                <!--Wyoming-->
-                <figure>
-                    <img src="images/Wyoming.png" alt="pond between trees with mountain in the background">
-                    <figcaption>Wyoming, 2021</figcaption>
-                </figure>
+                <!--section for opnly images-->
+                <section id="images">
+                    <!--Chile-->
+                    <figure>
+                        <img src="images/Chile.png" alt="beach at sunset with large rocky hill to the right">
+                        <figcaption>Chile, 2001</figcaption>
+                    </figure>
+                    <!--Guatemala-->
+                    <figure>
+                        <img src="images/Guatemala.png" alt="beach at sunset with purple plants surrounding">
+                        <figcaption>Guatemala, 1997</figcaption>
+                    </figure>
+                    <!--Hawaii-->
+                    <figure>
+                        <img src="images/Hawaii.png" alt="mountainous terrain with beach in view">
+                        <figcaption>Hawaii, 2010</figcaption>
+                    </figure>
+                    <!--Iran-->
+                    <figure>
+                        <img src="images/Iran.png" alt="sandy desert with red, bushy plants">
+                        <figcaption>Iran, 1999</figcaption>
+                    </figure>
+                    <!--Ireland-->
+                    <figure>
+                        <img src="images/Ireland.png" alt="bright green valley with small lake to the right">
+                        <figcaption>Ireland, 2012</figcaption>
+                    </figure>
+                    <!--Italy-->
+                    <figure>
+                        <img src="images/Italy.png" alt="lake along a big mountain side">
+                        <figcaption>Italy, 2015</figcaption>
+                    </figure>
+                    <!--Moab Desert-->
+                    <figure>
+                        <img src="images/Moab-Desert.png" alt="sunset through a rocky cliff">
+                        <figcaption>Moab Desert, 2020</figcaption>
+                    </figure>
+                    <!--Rocky Mountains-->
+                    <figure>
+                        <img src="images/Rocky-Mountains.png" alt="large rocky masses along wave front">
+                        <figcaption>Rocky Mountains, 2009</figcaption>
+                    </figure>
+                    <!--Switzerland-->
+                    <figure>
+                        <img src="images/Switzerland.png" alt="icy valley through the mountains">
+                        <figcaption>Switzerland, 2014</figcaption>
+                    </figure>
+                    <!--UK-->
+                    <figure>
+                        <img src="images/UK.png" alt="green valley in mountains">
+                        <figcaption>UK, 2005</figcaption>
+                    </figure>
+                    <!--USA-->
+                    <figure>
+                        <img src="images/USA.png" alt="field full of bright flowers">
+                        <figcaption>USA, 2021</figcaption>
+                    </figure>
+                    <!--Wyoming-->
+                    <figure>
+                        <img src="images/Wyoming.png" alt="pond between trees with mountain in the background">
+                        <figcaption>Wyoming, 2021</figcaption>
+                    </figure>
+                </section>
             </section>
             <!--End of gallery section-->
 
@@ -100,18 +103,23 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <p>Please fill out this form and I’ll connect with you soon.</p>
-                <form id="contact" method="post" action="https://wp.zybooks.com/form-viewer.php">
-                    <label for="myName">Name</label>
-                    <input type="text" name="myName" required placeholder="Enter your full name" id="myName">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your full name" id="name">
                 
-                    <label for="myEmail">Email</label>
-				    <input type="email" required placeholder="Enter your email address" name="myEmail" id="myEmail" >
+                    <label for="email">Email</label>
+				    <input type="email" placeholder="Enter your email address" name="email" id="email" >
 
-                    <label for="myMessage" id="label-block">Message</label>
-			        <textarea name="myMessage" id="myMessage" rows="4" cols="40"></textarea>
+			        <label for="messag">Message</label>
+				    <input type="text" id="message" name="message" placeholder="What can I help you with?">
+
+                    <section id="button">
+                        <input type="submit" id="submit" value="Submit me">
+                    </section>
                 </form>
             </section>
         </main>
         
         <footer>Copyright &copy;2021 TK Photography</footer>
     </body>
+</html>

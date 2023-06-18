@@ -1,0 +1,150 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+body {
+    min-width: 485px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 80%;
+}
+h1 {
+    color: #007d7b;
+    font-size: 3em;
+    text-transform:uppercase;
+    background-color:white;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform:uppercase;
+}
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+    text-transform:uppercase;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5em;
+}
+nav a {
+    padding:20px;
+    border-radius:10px;
+    width:80px;
+    text-decoration:none;
+    color: white;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+}
+/*return to top style*/
+[href="#top"] {
+    color:white;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+    border: 2px solid white;
+}
+main {
+    background-color: white;
+    color: black;
+}
+/*styles for the images and captions*/
+figcaption {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    height: 1.2em;
+    width: 100%;
+    margin-top: -2.4em;
+    z-index: 1;
+}
+/*form styles :)*/
+#contact {
+    background-color: black;
+    color: white;
+}
+#contact h2, p {
+    text-align:center;
+}
+form {
+    margin: auto;
+    padding: 0 15px;
+    width: 50%;
+}
+label {
+    text-transform: uppercase;
+    padding-left: 15px;
+    position: relative;
+}
+input {
+    width: 100%;
+    padding: 10px 5px 10px 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+/*button styles :)*/
+::placeholder {
+    color:#007d7b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input[type=submit] {
+    background-color:#007d7b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius:10px;
+}
+
+/*styles for differing screen sizes*/
+@media screen and (min-width:880px) {
+  header {
+    text-align: left;
+  }
+    nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+  #gallery img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    margin: 0px 10px 10px 20px;
+  }
+    #images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width:1300px) {
+    header {
+        text-align: left;
+    }
+    /*to make the navigation move right*/
+    nav ul {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        font-size: 1.5em;
+    }
+    #gallery img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0px 10px 10px 20px;
+    }
+    #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
